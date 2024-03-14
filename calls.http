@@ -1,0 +1,48 @@
+###
+GET http://localhost:8080/users
+
+
+###
+GET http://localhost:8080/users/josepx
+
+
+###
+GET http://localhost:8080/users/exists/josep
+
+###
+GET http://localhost:8080/users/exists/xxxx
+
+
+###
+DELETE localhost:8080/users/josep
+
+###
+POST localhost:8080/users
+content-type: application/json
+
+{
+  "username": "pepe",
+  "name": "Josep",
+  "secondName": "Robles",
+  "email": "robles@tecnocampus.cat"
+}
+
+
+###
+GET http://localhost:8081/notes
+
+
+###
+GET http://localhost:8081/notes/josep
+
+
+###
+POST http://localhost:8081/notes
+Content-Type: application/json
+
+{
+    "title": "A REST note",
+    "content": "This is the content of the note",
+    "userName": "alvarez"
+}
+

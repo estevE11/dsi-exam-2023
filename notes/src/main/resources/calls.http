@@ -1,0 +1,20 @@
+###
+GET localhost:8081/notes
+
+###
+GET localhost:8081/notes/josep
+
+###
+POST localhost:8081/notes
+content-type: application/json
+
+{
+  "title": "spring is coming",
+  "content": "feel it in the air",
+  "owner": "alvarez"
+}
+
+###
+DELETE localhost:8081/notes/josep
+
+
